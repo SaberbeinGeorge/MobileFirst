@@ -366,3 +366,22 @@ main {
     background-image: url('./assets/icon/check-circle24x24.svg');
 }
 
+/* section 3 */
+.section3-img--container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    min-height: 387px;
+    background-image: url('./assets/bitcoinbaby1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 60px;
+}
+.section3-img--container h2 {
+    font-size: var(--large-font);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
