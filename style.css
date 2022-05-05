@@ -138,7 +138,7 @@ main {
     font-size: var(--small-font);
     font-weight: 500;
     line-height: 1.8rem;
-    color: #757575;
+    color: #353434;
 }
 .container-principal--table {
     display: flex;
@@ -146,7 +146,7 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     width: 100%;
-    max-width: 900px;
+    max-width: 600px;
     height: 350px;
     margin: 0 auto;
 }
@@ -187,6 +187,7 @@ main {
     height: 210px;
     min-width: 200px;
     max-width: 295px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
 .table-money--container td {
@@ -204,7 +205,7 @@ main {
     font-size: var(--midMedium-font);
     font-weight: 500;
     line-height: 1.9rem;
-    color: #B5B0AC;
+    color: #736e6a;
 }
 .table-money--container .table-top__right {
     border-radius: 8px 0 0 0;
@@ -291,7 +292,7 @@ main {
     font-size: var(--small-font);
     font-weight: 500;
     line-height: 1.8rem;
-    color: var(--grey);
+    color: #cecece;
 }
 .main-informative--container .bataIcon {
     position: absolute;
@@ -341,7 +342,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: var(--grey);
+    color: #cecece;
 }
 .article--container .article-icon {
     position: absolute;
@@ -372,7 +373,7 @@ main {
     min-width: 320px;
     height: 50vh;
     min-height: 387px;
-    background-image: url('./assets/bitcoinbaby1.png');
+    background-image: url('./assets/img/bitcoinbaby2xx.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -384,4 +385,160 @@ main {
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+
+/* section 4 */
+
+.main-plans--container {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
+.plans-title--container {
+    width: 90%;
+    height: 115px;
+    max-width: 500px;
+    min-width: 288px;
+    margin: 0 auto;
+    text-align: center;
+}
+.plans-title--container h2 {
+    font-size: var(--large-font);
+    font-weight: bold;
+    line-height: 2.4rem;
+    color: var(--warm-black);
+    margin-bottom: 25px;
+}
+.plans-title--container p {
+    font-size: var(--small-font);
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #353434;
+}
+.plans-group--container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 60px 100px 60px 100px;
+}
+.plans-group--container article {
+    position: relative;
+    scroll-snap-align: center;
+    width: 30%;
+    height: 247px;
+    min-width: 190px;
+    margin: 0 auto;
+    padding-top: 35px;
+    border-radius: 8px;
+    background-color: var(--just-white);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-group--container article .recomend {
+    position: absolute;
+    width: 101px;
+    height: 31px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    font-family: var(--font-intel);
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    left: calc(50% - 50.5px);
+    top: -15px;
+}
+.plans-group--container article h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.plans-group--container .precio {
+    font-family: var(--font-intel);
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.2rem;
+    margin-bottom: 15px;
+}
+.plans-group--container article .symb-dollar {
+    font-size: 1.2rem;
+    font-weight: 500px;
+    line-height: 3rem;
+    vertical-align: top;
+}
+.plans-group--container .info {
+    font-family: var(--font-intel);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #535151;
+    margin-bottom: 15px;
+}
+.plans-group--container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 8px;
+    width: 80%;
+    height: 50px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+}
+.plans-group--container .icon-button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('./assets/icon/arrow-right24x24.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 50px 0;
+    background-color: var(--bitcoin-orange);
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+}
+.footer-li--container {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+    color: var(--just-white);
+}
+.footer-li--container li {
+    margin-bottom: 10px;
+}
+.footer-background {
+    align-self: center;
+    width: 65px;
+    height: 50px;
+    background-image: url('./assets/icon/Group65x50.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
