@@ -1,0 +1,8 @@
+.container-principal--table {
+    display: flex;
+    overflow-x:unset;
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    margin: 0 auto;
+}

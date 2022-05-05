@@ -103,10 +103,9 @@ main {
 }
 .main-exchange--container {
     width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    height: auto;
+    min-width: 320px;
     margin: 0 auto;
+    height: auto;
 }
 .main-exchange--container .backgroundImg {
     width: 195px;
@@ -126,6 +125,7 @@ main {
     min-width: 288px;
     max-width: 500px;
     margin-bottom: 30px;
+    padding: 5px 5px;
 }
 .main-title--container h2 {
     font-size: var(--large-font);
@@ -140,33 +140,55 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
+.container-principal--table {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    margin: 0 auto;
+}
 .main-table--container {
-    width: 80%;
-    min-width: 235px;
-    max-width: 500px;
+    width: 90%;
+    scroll-snap-align: center;
+    min-width: 295px;
+    max-width: 300px;
     height: auto;
     margin: 0 auto;
-    
+    text-align: center;
 }
-.main-table--container p:not(.section1-p2) {
+.main-table--container .table-title:not(.section1-p2) {
+    display: inline-block;
     font-size: var(--medium-font);
     font-weight: bold;
     color: #FF9536;
     margin-bottom: 10px;
-    text-align: center;
+}
+.main-table--container .table-title2 {
+    display: inline-block;
+    font-size: var(--medium-font);
+    font-weight: bold;
+    color: var(--secondary-blue);
+    margin-bottom: 10px;
 }
 .table-money--container {
-    width: 90%;
-    height: 200px;
-    min-width: 230px;
-    max-width: 300px;
+    width: 100%;
+    height: 220px;
+    min-width: 288px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .table-money--container table {
     margin: 0 auto;
     font-family: var(--font-intel);
-    width: 202px;
+    width: 80%;
+    height: 210px;
+    min-width: 200px;
+    max-width: 295px;
 }
+
 .table-money--container td {
     width: 50%;
     height: 39px;
@@ -232,6 +254,13 @@ main {
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
+.section1-text--container .section1-p2--t2 {
+    display: inline-block;
+    padding: 10px;
+    color: var(--warm-black);
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
 
 /* seccion2 */
 .main-informative--container {
@@ -241,6 +270,7 @@ main {
     height: auto;
     padding-top: 50px;
     background-color:var(--warm-black);
+    padding-bottom: 40px;
 }
 .title-informative--container {
     width: 90%;
@@ -275,7 +305,18 @@ main {
     left: calc(50% - 20px);
     top: -12px;
 }
-
+.article-group--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    height: auto;
+}
 .article--container {
     position: relative;
     width: 90%;
@@ -286,6 +327,8 @@ main {
     margin: 0 auto;
     background-color: var(--warm-black1);
     margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
 }
 .article--container .p-subtitle {
     font-size: 1.8rem;
@@ -322,3 +365,4 @@ main {
 .article--container .check{
     background-image: url('./assets/icon/check-circle24x24.svg');
 }
+
